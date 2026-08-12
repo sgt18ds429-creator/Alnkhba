@@ -1,0 +1,85 @@
+name: appnukba
+description: AI-powered Arabic radiology education assistant for Al Nukhba University.
+publish_to: 'none'
+
+version: 1.1.3+6
+
+environment:
+  sdk: '>=3.8.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Network and APIs
+  http: ^1.2.0
+
+  # State Management
+  provider: ^6.1.1
+
+  # Local persistence for chat sessions
+  shared_preferences: ^2.2.0
+  flutter_secure_storage: ^10.3.1
+
+  # Native RTL Localizations
+  flutter_localizations:
+    sdk: flutter
+
+  # Voice: speech-to-text (recording)
+  speech_to_text: ^7.4.0
+
+  # Audio: play TTS and pronunciation audio (base64 or URLs)
+  audioplayers: ^6.0.0
+
+  # File / image picking
+  file_picker: ^10.3.10
+  image_picker: ^1.1.0
+
+  # Open Wikipedia and YouTube links in browser or app
+  url_launcher: ^6.2.5
+
+  # Formatting timestamps in chat history list
+  intl: ^0.20.2
+
+  # PDF Generation
+  pdf: ^3.10.8
+
+  # Voice recording & playback features
+  record: ^5.1.2
+  just_audio: ^0.9.36
+  permission_handler: ^11.3.1
+  path_provider: ^2.1.5
+  share_plus: ^7.2.1
+  open_filex: ^4.7.0
+  camera: ^0.10.6
+  supabase_flutter: ^2.15.4
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/logo_icon_v2.png"
+  adaptive_icon_background: "#0F172A"
+  adaptive_icon_foreground: "assets/logo_icon_foreground.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/logo_icon_v2.png
+    - assets/fonts/
+    - assets/images/
+
+  fonts:
+    - family: Cairo
+      fonts:
+        - asset: assets/fonts/Amiri-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Amiri-Bold.ttf
+          weight: 700

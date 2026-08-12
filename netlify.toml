@@ -1,0 +1,11 @@
+[build]
+  command = "mkdir -p dist && cp privacy-policy.html dist/index.html && cp privacy-policy.html dist/privacy-policy.html && cp account-deletion.html dist/account-deletion.html"
+  publish = "dist"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "no-referrer"
+    Content-Security-Policy = "default-src 'self'; style-src 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'self' mailto:; frame-ancestors 'none'"

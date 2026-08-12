@@ -1,0 +1,7 @@
+# Local Android/Flutter files
+.gradle/
+local.properties
+key.properties
+*.jks
+*.keystore
+app-release.aab

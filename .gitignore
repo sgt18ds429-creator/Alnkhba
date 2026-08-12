@@ -1,0 +1,28 @@
+# Flutter / Dart
+.dart_tool/
+.packages
+.pub-cache/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Secrets and signing files
+android/key.properties
+android/local.properties
+android/**/*.jks
+android/**/*.keystore
+*.pem
+*.p12
+*.mobileprovision
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+ios/Pods/
+
+macos/Flutter/ephemeral/
+linux/flutter/ephemeral/
+windows/flutter/ephemeral/
