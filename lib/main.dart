@@ -103,7 +103,7 @@ class MyApp extends StatelessWidget {
               side: BorderSide(color: Colors.black.withOpacity(0.05), width: 1),
             ),
           ),
-          pageTransitionsTheme: const PageTransitionsTheme(
+          pageTransitionsTheme: PageTransitionsTheme(
             builders: {
               TargetPlatform.android: FadeUpwardsPageTransitionsBuilder(),
               TargetPlatform.iOS: CupertinoPageTransitionsBuilder(),
@@ -167,7 +167,7 @@ class MyApp extends StatelessWidget {
               side: BorderSide(color: Colors.white.withOpacity(0.05), width: 1),
             ),
           ),
-          pageTransitionsTheme: const PageTransitionsTheme(
+          pageTransitionsTheme: PageTransitionsTheme(
             builders: {
               TargetPlatform.android: FadeUpwardsPageTransitionsBuilder(),
               TargetPlatform.iOS: CupertinoPageTransitionsBuilder(),
