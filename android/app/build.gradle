@@ -46,7 +46,6 @@ android {
 
     signingConfigs {
         release {
-            signingConfig = signingConfigs.debug
             if (keystorePropertiesFile.exists() && keystoreProperties["storeFile"]) {
                 keyAlias = keystoreProperties["keyAlias"]
                 keyPassword = keystoreProperties["keyPassword"]
@@ -66,9 +65,10 @@ android {
 
     buildTypes {
         release {
-            signingConfig = signingConfigs.debug
             if (keystorePropertiesFile.exists() && keystoreProperties["storeFile"]) {
                 signingConfig = signingConfigs.release
+            } else {
+                signingConfig = signingConfigs.debug
             }
             minifyEnabled = false
             shrinkResources = false
